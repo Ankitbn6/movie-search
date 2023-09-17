@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #head{
+            padding-left: 610px;
+            font-size: 50px;
+            color: rgb(81, 7, 7);
+        }
+        h2{
+            font-size: 40px;
+            color: white;
+        }
+        #container{
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(224, 118, 118);
+        }
+        #container>div{
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+        }
+        #container>div>input{
+            height: 40px;
+            width: 300px;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+        #search{
+            cursor: pointer;
+            width: 200px;
+            height: 60px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #search:hover{
+            background-color: rgb(201, 32, 97);
+        }
+        
+        #search>img{
+            width: 40px;
+            color: white;
+        }
+        #info{
+            margin: 50px 0px 0px 50px;
+            width: 350px;
+            height: 600px;
+        }
+        #info>img{
+            height: 500px;
+            width: 350px;
+        }
+        #info>div{
+            font-size: 26px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #bag{
+            display: flex;
+            justify-content: center;
+        }
+        #rec>img{
+            height: 150px;
+            width: 150px;
+            margin: 30px 0px 0px -100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Movie info app</h1>
+    <div id="container">
+        <div><h2>Title:</h2><input type="text" id="title" placeholder="Enter the movie title"></div>
+        <div><h2>Year:</h2><input type="text" id="year" placeholder="Enter movie release year"></div>
+        <div id="search"><img src="icons8-search-50 (1).png" alt=""><h2>Search</h2></div>
+    </div>
+    <div id="bag">
+        <div id="info"></div>
+        <div id="rec"></div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
